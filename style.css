@@ -1,0 +1,7 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+input[type="text"], input[type="date"], select {
+    border-radius: 6px;
+}
