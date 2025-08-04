@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from datetime import datetime
-
 app = Flask(__name__)
 client = MongoClient("mongodb://127.0.0.1:27017/")
 db = client['todo_db']
@@ -48,3 +47,4 @@ def delete(task_id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
